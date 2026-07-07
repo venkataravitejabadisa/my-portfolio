@@ -1,0 +1,159 @@
+.loader-screen{
+position:fixed;
+width:100%;
+height:100vh;
+background:#020617;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+
+.loader-name{
+font-size:55px;
+color:#38bdf8;
+text-align:center;
+letter-spacing:4px;
+animation:zoom 1.5s infinite alternate;
+}
+
+.loader-screen p{
+color:white;
+margin-top:20px;
+font-size:22px;
+}
+
+.loader-bar{
+margin-top:30px;
+width:250px;
+height:8px;
+background:#334155;
+border-radius:20px;
+overflow:hidden;
+}
+
+.loader-fill{
+height:100%;
+background:#38bdf8;
+animation:loading 2s linear forwards;
+}
+
+@keyframes loading{
+from{
+width:0;
+}
+to{
+width:100%;
+}
+}
+
+@keyframes zoom{
+from{
+transform:scale(1);
+}
+to{
+transform:scale(1.08);
+}
+}
+.loader-name {
+  font-size: 4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  color: #38bdf8;
+  white-space: nowrap;
+
+  animation: floatName 3s ease-in-out infinite;
+}
+@keyframes floatName {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+.loader-screen {
+  overflow: hidden;
+}
+
+.loader-name {
+  max-width: 95%;
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+.loader-title{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:18px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+}
+
+.loader-title span{
+    font-size:clamp(2rem,5vw,4.8rem);
+    font-weight:600;
+    letter-spacing:6px;
+    color:#38bdf8;
+    text-transform:uppercase;
+}
+
+.left{
+    animation:slideLeft 1.4s ease forwards;
+}
+
+.center{
+    animation:fadeIn 1.6s ease forwards;
+}
+
+.right{
+    animation:slideRight 1.4s ease forwards;
+}
+@keyframes slideLeft{
+    from{
+        opacity:0;
+        transform:translateX(-150px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes slideRight{
+    from{
+        opacity:0;
+        transform:translateX(150px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:scale(.7);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+.loader-title span{
+    text-shadow:
+      0 0 10px #38bdf8,
+      0 0 25px #38bdf8,
+      0 0 45px #0ea5e9;
+}
