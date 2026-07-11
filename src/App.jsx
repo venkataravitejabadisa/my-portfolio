@@ -270,120 +270,92 @@ Download Resume
   </div>
 </div>
       </section>
-      <section className="certificates" id="certificates" data-aos="fade-left">
+     <section className="certificates" id="certificates" data-aos="fade-left">
   <h2>My Certifications</h2>
+  <div className="certificate-grid"></div>
 
-  <div className="certificate-grid">
+  {[
+    {
+      img: "acn.jpeg",
+      title: "Advanced Computer Networks",
+      org: "NPTEL (IIT Madras / SWAYAM)",
+    },
+    {
+      img: "ai.jpeg",
+      title: "Fundamentals of Artificial Intelligence",
+      org: "Wadhwani Foundation",
+    },
+    {
+      img: "dl&ai.jpeg",
+      title: "Deep Learning Foundations for AI",
+      org: "Udemy",
+    },
+    {
+      img: "wdci.jpeg",
+      title: "Web Development & Cloud Integration I",
+      org: "SkillDzire",
+    },
+    {
+      img: "cs.jpeg",
+      title: "Cybersecurity",
+      org: "Tech Mahindra Foundation",
+    },
+    {
+      img: "wd.jpeg",
+      title: "Web Design & Development",
+      org: "Skill India Digital Hub",
+    },
+    {
+      img: "html.jpeg",
+      title: "HTML Essentials",
+      org: "Cisco Networking Academy",
+    },
+    {
+      img: "css.jpeg",
+      title: "CSS Essentials",
+      org: "Cisco Networking Academy",
+    },
+    {
+      img: "pe-2.jpeg",
+      title: "Python Essentials 2",
+      org: "Cisco Networking Academy",
+    },
+    {
+      img: "iot.jpeg",
+      title: "Introduction to Industry 4.0 and IIoT",
+      org: "Industrial Internet of Things",
+    },
+    {
+      img: "ibm.jpeg",
+      title: "Create a Great Professional Resume",
+      org: "IBM SkillsBuild",
+    },
+    {
+      img: "isyep.jpeg",
+      title: "Inter State Youth Exchange Programme",
+      org: "MY Bharat",
+    },
+  ].map((cert, index) => (
+    <div className="certificate-card" key={index}>
+      <img
+        src={`${import.meta.env.BASE_URL}certificates/${cert.img}`}
+        alt={cert.title}
+      />
 
-    <div className="certificate-card">
-      <img src="/certificates/acn.jpeg" alt="Advanced Computer Networks" />
-      <h3>Advanced Computer Networks</h3>
-      <p>NPTEL (IIT Madras / SWAYAM)</p>
-      <a href="/certificates/acn.jpeg" target="_blank" rel="noopener noreferrer">
+      <h3>{cert.title}</h3>
+
+      <p>{cert.org}</p>
+
+      <a
+        href={`${import.meta.env.BASE_URL}certificates/${cert.img}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         View Certificate
       </a>
     </div>
+  ))}
 
-    <div className="certificate-card">
-      <img src="/certificates/ai.jpeg" alt="Fundamentals of AI" />
-      <h3>Fundamentals of Artificial Intelligence</h3>
-      <p>Wadhwani Foundation</p>
-      <a href="/certificates/ai.jpeg" target="_blank" rel="noopener noreferrer">
-        View Certificate
-      </a>
-    </div>
-
-    <div className="certificate-card">
-      <img src="/certificates/dl&ai.jpeg" alt="Deep Learning Foundations for AI" />
-      <h3>Deep Learning Foundations for AI</h3>
-      <p>Udemy</p>
-      <a href="/certificates/dl&ai.jpeg" target="_blank" rel="noopener noreferrer">
-        View Certificate
-      </a>
-    </div>
-
-    <div className="certificate-card">
-      <img src="/certificates/wdci.jpeg" alt="Generative AI" />
-      <h3>web Development & Cloud Integration I</h3>
-      <p>Skilldzire</p>
-      <a href="/certificates/wdci.jpeg" target="_blank" rel="noopener noreferrer">
-        View Certificate
-      </a>
-    </div>
-
-    <div className="certificate-card">
-      <img src="/certificates/cs.jpeg" alt="Cybersecurity" />
-      <h3>Cybersecurity</h3>
-      <p>Tech Mahindra Foundation (Skill India)</p>
-      <a href="/certificates/cs.jpeg" target="_blank" rel="noopener noreferrer">
-        View Certificate
-      </a>
-    </div>
-
-    <div className="certificate-card">
-      <img src="/certificates/wd.jpeg" alt="Web Design & Development" />
-      <h3>Web Design & Development</h3>
-      <p>Skill India Digital Hub (NSDC)</p>
-      <a href="/certificates/wd.jpeg" target="_blank" rel="noopener noreferrer">
-        View Certificate
-      </a>
-    </div>
-
-    <div className="certificate-card">
-      <img src="/certificates/html.jpeg" alt="HTML Essentials" />
-      <h3>HTML Essentials</h3>
-      <p>Cisco Networking Academy</p>
-      <a href="/certificates/html.jpeg" target="_blank" rel="noopener noreferrer">
-        View Certificate
-      </a>
-    </div>
-
-    <div className="certificate-card">
-      <img src="/certificates/css.jpeg" alt="CSS Essentials" />
-      <h3>CSS Essentials</h3>
-      <p>Cisco Networking Academy</p>
-      <a href="/certificates/css.jpeg" target="_blank" rel="noopener noreferrer">
-        View Certificate
-      </a>
-    </div>
-
-    <div className="certificate-card">
-      <img src="/certificates/pe-2.jpeg" alt="Python Essentials 2" />
-      <h3>Python Essentials 2</h3>
-      <p>Cisco Networking Academy</p>
-      <a href="/certificates/pe-2.jpeg" target="_blank" rel="noopener noreferrer">
-        View Certificate
-      </a>
-    </div>
-
-    <div className="certificate-card">
-      <img src="/certificates/iot.jpeg" alt="Industry 4.0 and IIoT" />
-      <h3>Introduction to Industry 4.0 and IIoT</h3>
-      <p>Industrial Internet of Things</p>
-      <a href="/certificates/iot.jpeg" target="_blank" rel="noopener noreferrer">
-        View Certificate
-      </a>
-    </div>
-
-    <div className="certificate-card">
-      <img src="/certificates/ibm.jpeg" alt="IBM SkillsBuild" />
-      <h3>Create a Great Professional Resume</h3>
-      <p>IBM SkillsBuild</p>
-      <a href="/certificates/ibm.jpeg" target="_blank" rel="noopener noreferrer">
-        View Certificate
-      </a>
-    </div>
-
-    <div className="certificate-card">
-      <img src="/certificates/isyep.jpeg" alt="MY Bharat" />
-      <h3>Inter State Youth Exchange Programme</h3>
-      <p>MY Bharat</p>
-      <a href="/certificates/isyep.jpeg" target="_blank" rel="noopener noreferrer">
-        View Certificate
-      </a>
-    </div>
-
-  </div>
 </section>
 {/* Achievements */}
 <section className="achievements" id="achievements" data-aos="zoom-in">
