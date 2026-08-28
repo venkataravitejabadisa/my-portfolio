@@ -411,8 +411,8 @@ Download Resume
     <p><strong>Branch:</strong> Computer Science and Engineering</p>
     <p><strong>College:</strong> SREE VAHINI INSTITUTE OF SCIENCE & TECHNOLOGY</p>
     <p><strong>University:</strong> JNTU KAKINADA</p>
-    <p><strong>Year:</strong> 2024 – 2027</p>
-    <p><strong>CGPA:</strong> 8.52 (Update with your actual CGPA)</p>
+    <p><strong>Year:</strong> pursunig </p>
+    <p><strong>CGPA:</strong> 8.68 (Update with your actual CGPA)</p>
   </div>
 
   <div className="education-card">
@@ -425,7 +425,7 @@ Download Resume
   <div className="education-card">
     <h3>SSC (10th Class)</h3>
     <p><strong>School:</strong> ST.ANN's EM HIGH SCHOOL</p>
-    <p><strong>Year:</strong> 2021</p>
+    <p><strong>Year:</strong>2021 </p>
     <p><strong>Percentage:</strong> 10</p>
   </div>
 </section>
