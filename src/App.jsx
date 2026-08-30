@@ -86,7 +86,7 @@ Hire Me
 </button>
 
 <a
-href="/resume.pdf"
+href="badisavenkataraviteja.pdf"
 target="_blank"
 rel="noopener noreferrer"
 >
@@ -97,7 +97,7 @@ View Resume
 
 </a>
 
-<a href="/resume.pdf" download>
+<a href="/badisavenkataraviteja.pdf" download>
 
 <button className="btn download-btn">
 Download Resume
@@ -138,8 +138,7 @@ Download Resume
 
   <p>
     I am <strong>BADISA VENKATA RAVITEJA</strong>, a passionate and
-    self-motivated Frontend Developer currently pursuing a Bachelor's
-    degree in Computer Science and Engineering.
+     Frontend Developer  pursuing a Bachelor's degree in Computer Science and Engineering.
   </p>
   <p>
     I am actively looking for Internship and Frontend Developer
@@ -224,21 +223,35 @@ Download Resume
 
       <div className="project-buttons">
         <a
-          href="https://github.com/your-github-link"
+          href="https://github.com/venkataravitejabadisa/my-portfolio"
           target="_blank"
           rel="noopener noreferrer"
           className="btn"
         >
           GitHub
         </a>
+      </div>
+    </div>
 
+  </div>
+  <div className="project-grid">
+
+    <div className="project-card">
+      <h3>ATM Machine</h3>
+      
+      <p>
+      Console-based ATM Machine application using Python to simulate basic banking operations. The project includes PIN authentication, account selection, balance enquiry, cash deposit, cash withdrawal, PIN change, and mini statement functionality.
+ 
+      </p>
+
+      <div className="project-buttons">
         <a
-          href="https://your-live-link.vercel.app"
+          href="https://github.com/venkataravitejabadisa/ATM-Machine"
           target="_blank"
           rel="noopener noreferrer"
-          className="btn btn-outline"
+          className="btn"
         >
-          Live Demo
+          GitHub
         </a>
       </div>
     </div>
@@ -259,13 +272,6 @@ Download Resume
       className="btn"
     >
       GitHub
-    </a>
-
-    <a
-      href="#"
-      className="btn btn-outline"
-    >
-      Live Demo
     </a>
   </div>
 </div>
@@ -404,45 +410,26 @@ Download Resume
   </div>
 </section>
 <section className="education" id="education" data-aos="flip-up">
-  <h2>Education</h2>
+ <div className="education-card">
+  <h3>B.TECH (CSE)</h3>
+  <p><strong>College:</strong> SREE VAHINI INSTITUTE OF SCIENCE & TECHNOLOGY</p>
+  <p><strong>Year:</strong> pursuing</p>
+  <p><strong>CGPA:</strong> 8.68</p>
+</div>
 
-  <div className="education-card">
-    <h3>Bachelor of Technology (B.Tech)</h3>
-    <p><strong>Branch:</strong> Computer Science and Engineering</p>
-    <p><strong>College:</strong> SREE VAHINI INSTITUTE OF SCIENCE & TECHNOLOGY</p>
-    <p><strong>University:</strong> JNTU KAKINADA</p>
-    <p><strong>Year:</strong> pursunig </p>
-    <p><strong>CGPA:</strong> 8.68 (Update with your actual CGPA)</p>
-  </div>
+<div className="education-card">
+  <h3>DIPLOMA (CSE)</h3>
+  <p><strong>College:</strong> SREE VAHINI INSTITUTE OF SCIENCE & TECHNOLOGY</p>
+  <p><strong>Year:</strong> 2021 – 2024</p>
+  <p><strong>Percentage:</strong> 83.75</p>
+</div>
 
-  <div className="education-card">
-    <h3>DIPLOMA (CSE)</h3>
-    <p><strong>College:</strong> SREE VAHINI INSTITUTE OF SCIENCE & TECHNOLOGY</p>
-    <p><strong>Year:</strong> 2021 – 2024</p>
-    <p><strong>Percentage:</strong> 83.75</p>
-  </div>
-
-  <div className="education-card">
-    <h3>SSC (10th Class)</h3>
-    <p><strong>School:</strong> ST.ANN's EM HIGH SCHOOL</p>
-    <p><strong>Year:</strong>2021 </p>
-    <p><strong>Percentage:</strong> 10</p>
-  </div>
-</section>
-<section className="github" id="github" data-aos="zoom-in">
-  <h2>GitHub Statistics</h2>
-
-  <div className="github-stats">
-    <img
-      src="https://github-readme-stats.vercel.app/api?username=venkataravitejabadisa&show_icons=true&theme=tokyonight"
-      alt="GitHub Stats"
-    />
-
-    <img
-      src="https://github-readme-streak-stats.herokuapp.com/?user=venkataravitejabadisa&theme=tokyonight"
-      alt="GitHub Streak"
-    />
-  </div>
+<div className="education-card">
+  <h3>SSC (10th Class)</h3>
+  <p><strong>School:</strong> ST.ANN's EM HIGH SCHOOL</p>
+  <p><strong>Year:</strong> 2021</p>
+  <p><strong>Percentage:</strong> 10</p>
+</div>
 </section>
 <section className="contact" id="contact" data-aos="fade-up">
   <h2>Contact Me</h2>
